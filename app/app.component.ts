@@ -6,7 +6,7 @@ import { DataStateChangeEventArgs, Sorts } from '@syncfusion/ej2-grids';
 
 @Component({
     selector: 'app-container',
-    template:`<ej-grid [dataSource]='data | async' allowPaging= 'true' [pageSettings]='pageOptions' allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)' (actionFailure)= 'failure($event)'>
+    template:`<ej-grid [dataSource]='data | async' allowPaging= 'true' [pageSettings]='pageOptions' allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)'>
         <e-columns>
             <e-column field= "OrderID" headerText="Order ID" width="130" ></e-column>
             <e-column field= "CustomerID" headerText="Customer Name" width="150"></e-column>
@@ -27,10 +27,6 @@ export class AppComponent {
 
     public dataStateChange(state: DataStateChangeEventArgs): void {
         this.service.execute(state);
-    }
-
-    public failure(e: any): void {
-        debugger;
     }
 
     public ngOnInit(): void {
