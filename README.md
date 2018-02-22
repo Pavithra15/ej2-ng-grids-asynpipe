@@ -1,2 +1,19 @@
-# ej2-ng-grids-asynpipe
-EJ2 angular Grid using Observable object
+# ej2-ng-grid-detailrow-editing
+
+Detail Grid editing with custom dialog model
+
+## Installing
+
+To install all dependent packages, use the below command
+
+```
+npm install
+```
+
+## Run sample
+
+To run the sample, use the below command
+
+```
+npm start
+```
