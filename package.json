@@ -1,7 +1,7 @@
 {
-  "name": "ej2-ng-grid-Bootstrap-grid",
+  "name": "ej2-ng-grids-async-pipe",
   "version": "0.0.1",
-  "description": "Syncfusion Angular Grid For customizing row",
+  "description": "Syncfusion Angular Grid For Observable object",
   "main": "index.js",
   "scripts": {
     "rmf": "node ./node_modules/rimraf/bin dist",
