@@ -6,14 +6,14 @@ import { DataStateChangeEventArgs, Sorts } from '@syncfusion/ej2-grids';
 
 @Component({
     selector: 'app-container',
-    template:`<ej-grid [dataSource]='data | async' allowPaging= 'true' [pageSettings]='pageOptions' allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)'>
+    template:`<ejs-grid [dataSource]='data | async' allowPaging= 'true' [pageSettings]='pageOptions' allowSorting= 'true' allowGrouping= 'true' (dataStateChange)= 'dataStateChange($event)'>
         <e-columns>
             <e-column field= "OrderID" headerText="Order ID" width="130" ></e-column>
             <e-column field= "CustomerID" headerText="Customer Name" width="150"></e-column>
             <e-column field= "ShipName" headerText="Ship Name" width="200"></e-column>
             <e-column field= "ShipCity" headerText="Ship City" width="150"></e-column>
         </e-columns>
-    </ej-grid>`    
+    </ejs-grid>`    
 })
 export class AppComponent {
     public data: Observable<DataStateChangeEventArgs>;
